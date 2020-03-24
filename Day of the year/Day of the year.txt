@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+//#define leap(x) (x%400==0||(x%4==0&&x%100!=0)?1:0)
+class Date
+{
+    public:
+    Date(int y=0,int m=0,int d=0,int s=0)
+    {    
+    }
+    int GetMonthday(int years, int month)
+	{
+		static int days[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		int day = days[month];
+
+		if (month == 2 && ((years % 4 == 0 && years % 100 != 0) || years % 400 == 0))
+		{
+			day += 1;
+		}
+		return day;
+	}
+   void Getmonth()
+    {
+        int tmp=s;
+     int i=1;
+     while(tmp>GetMonthday(y,i))
+     {
+         tmp-=GetMonthday(y,i);
+         i++;
+     }
+        m=i;
+       d=tmp;
+      
+        
+    }
+   
+    void reset()
+    {
+        m=0;
+        d=0;
+    }
+    int y,m,d,s;
+};
+
+
+int main()
+{
+    Date a;
+    while(scanf("%d %d",&a.y,&a.s)!=EOF)
+    {
+       a.reset();
+        a.Getmonth();
+        printf("%d-%02d-%02d",a.y,a.m,a.d);
+        
+    }
+    
+}

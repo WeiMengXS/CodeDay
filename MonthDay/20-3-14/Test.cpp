@@ -179,6 +179,10 @@ public:
 		return (*this) > d && (*this) == d;
 
 	}
+	istream& operator>>(istream& in, Date& d)
+	{
+		
+	}
 
 	// <ÔËËã·ûÖØÔØ
 	bool operator < (const Date& d);
@@ -225,12 +229,12 @@ int main()
 	//d4.show();
 	//d4.operator-(365);
 
-	d4.operator++();
-	d4.show();
-	Date ret =d4.operator++(1);
-	ret.show();
-	d4.show();
-	cout << d4.operator>(ret) << endl;
+	//d4.operator++();
+	//d4.show();
+	//Date ret =d4.operator++(1);
+	//ret.show();
+	//d4.show();
+	//cout << d4.operator>(ret) << endl;
 
 
 

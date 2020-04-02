@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int max(int a,int b)
+{
+    return a>b?a:b;
+}
+int main()
+{int a,b,c;
+ while(scanf("%d%d%d",&a,&b,&c)!=EOF)
+ {
+     int ret=max(a,b);
+         int m=max(ret,c);
+     cout<<m<<endl;
+         
+ }
+
+    return 0;
+}

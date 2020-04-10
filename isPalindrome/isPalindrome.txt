@@ -1,0 +1,49 @@
+class Solution {
+public:
+    bool ischarornumber(char ch)
+    {
+        if((ch>='A'&&ch<='Z')
+        ||(ch>='a'&&ch<='z')
+        ||(ch>='0'&&ch<='9'))
+        return true;
+        else
+        return false;
+    }
+    bool isPalindrome(string s) {
+        int begin=0;
+        int end=s.size()-1;
+        while(begin<end)
+        {
+            while(begin<end&&ischarornumber(s[begin])==false)
+            begin++;
+            while(begin<end&&ischarornumber(s[end])==false)
+            end--;
+            
+            if((s[begin]+32-'a')%32==(s[end]+32-'a')%32)
+            {
+                ++begin;
+                --end;
+                
+                // if(s[begin]<s[end]&&s[begin]>'A'&&s[begin]+32!=s[end])
+                // {
+                //     ++begin;
+                //     --end;
+                // }
+                // else if(s[begin]>s[end]&&s[end]>'A'&&s[end]+32!=s[end])
+                // {
+                //     ++begin;
+                //     --end;
+                // }
+                // else{
+                // return false;
+                // }
+            }
+            else
+            {
+              return false;
+            }
+        }
+            return true;
+
+    }
+};

@@ -1,0 +1,33 @@
+﻿生成启动时间为 2020/5/19 2:22:44。
+     1>项目“c:\Users\administrator\documents\visual studio 2013\Projects\deque\deque\deque.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(5): error C2065: “vector”: 未声明的标识符
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(5): error C2275: “T”: 将此类型用作表达式非法
+                 c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(78) : 参见“T”的声明
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(78): error C2974: 'bit::priority_queue' : 模板 对于 'Container'是无效参数，应为类型
+                 c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(7) : 参见“bit::priority_queue”的声明
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(78): error C2133: “pq”: 未知的大小
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(78): error C2512: “bit::priority_queue”: 没有合适的默认构造函数可用
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(80): error C2662: “void bit::priority_queue<T,Container>::push(const T &)”: 不能将“this”指针从“bit::priority_queue”转换为“bit::priority_queue<T,Container> &”
+                 原因如下:  无法从“bit::priority_queue”转换为“bit::priority_queue<T,Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(81): error C2662: “void bit::priority_queue<T,Container>::push(const T &)”: 不能将“this”指针从“bit::priority_queue”转换为“bit::priority_queue<T,Container> &”
+                 原因如下:  无法从“bit::priority_queue”转换为“bit::priority_queue<T,Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(82): error C2662: “void bit::priority_queue<T,Container>::push(const T &)”: 不能将“this”指针从“bit::priority_queue”转换为“bit::priority_queue<T,Container> &”
+                 原因如下:  无法从“bit::priority_queue”转换为“bit::priority_queue<T,Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(83): error C2662: “void bit::priority_queue<T,Container>::push(const T &)”: 不能将“this”指针从“bit::priority_queue”转换为“bit::priority_queue<T,Container> &”
+                 原因如下:  无法从“bit::priority_queue”转换为“bit::priority_queue<T,Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(84): error C2662: “bool bit::priority_queue<T,Container>::empty(void)”: 不能将“this”指针从“bit::priority_queue”转换为“bit::priority_queue<T,Container> &”
+                 原因如下:  无法从“bit::priority_queue”转换为“bit::priority_queue<T,Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>c:\users\administrator\documents\visual studio 2013\projects\deque\deque\priority_queue.h(84): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+     1>已完成生成项目“c:\Users\administrator\documents\visual studio 2013\Projects\deque\deque\deque.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.26
